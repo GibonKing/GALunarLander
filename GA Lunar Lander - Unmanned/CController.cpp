@@ -269,6 +269,7 @@ bool CController::Update()
          m_iFittest = lndr;
        }
 
+
        //check for success
        if ( (m_vecPop[lndr].dFitness >= BIG_NUMBER) && !m_bSuccess)
        {
@@ -280,6 +281,11 @@ bool CController::Update()
        //reset the landers
        m_vecLanders[lndr].Reset(m_vPadPos);
      }
+
+	 ofstream doc;
+	 doc.open("ResultsNoCrossover0_1Mutation2.txt", ios::app);
+	 doc << BestScoreSoFar << "\n";
+	 doc.close();
 
      //reset finished flag
      bAllFinished = false;

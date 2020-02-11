@@ -14,6 +14,9 @@
 #include <windows.h>
 #include <vector>
 #include <mmsystem.h>
+#include <iostream>
+#include <fstream>
+#include <string>
 
 #include "utils.h"
 #include "CLander.h"

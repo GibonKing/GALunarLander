@@ -303,15 +303,17 @@ void CLander::CalculateFitness()
 	double fitAirTime = (double)m_cTick / (speed + 1);
 
 	//calculate fitness
-	m_dFitness = distFit + 400 * rotFit + 4 * fitAirTime;
+	m_dFitness = distFit + (400 * rotFit) + (4 * fitAirTime);
 
 	//check if we have a successful landing
-	if ((DistFromPad < DIST_TOLERANCE) &&
-		(speed < SPEED_TOLERANCE) &&
-		(fabs(m_dRotation) < ROTATION_TOLERANCE))
+	if ((DistFromPad		< DIST_TOLERANCE) &&
+		(speed				< SPEED_TOLERANCE) &&
+		(fabs(m_dRotation)	< ROTATION_TOLERANCE))
 	{
 		m_dFitness = BIG_NUMBER;
 	}
+
+	
 }
 
 //----------------------------- Decode() ---------------------------------

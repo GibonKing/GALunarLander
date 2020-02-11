@@ -177,10 +177,10 @@ vector<SGenome> CgaLander::Epoch()
 		//operator - crossover
 		SGenome baby1, baby2;
     
-		CrossoverMulti(mum.vecActions,
-                   dad.vecActions,
-                   baby1.vecActions,
-                   baby2.vecActions);
+		/*CrossoverMulti(mum.vecActions,
+						dad.vecActions,
+						baby1.vecActions,
+						baby2.vecActions);*/
 
 		//operator - mutate
 		Mutate(baby1.vecActions);

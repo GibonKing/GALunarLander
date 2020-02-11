@@ -56,15 +56,15 @@
 
 //the is the maximum distance from the center of the landing pad
 //the ship must be to satisfy the landing criteria
-#define DIST_TOLERANCE         5.0
+#define DIST_TOLERANCE         10.0
 
 //--------------------------------------------------------------------
 //	defines used in the genetic algorithm
 //--------------------------------------------------------------------
 #define POP_SIZE              100
 #define CHROMO_LENGTH         30
-#define MUTATION_RATE  0.01
-#define CROSSOVER_RATE 0.7
+#define MUTATION_RATE		  0.10
+#define CROSSOVER_RATE		  0.7
 
 //used for elitism
 #define NUM_ELITE             4
